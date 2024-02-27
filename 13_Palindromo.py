@@ -11,3 +11,11 @@ def palindromo(text):
     return False
 
 palindromo('Ana lleva al oso la avellana.')
+
+def palindromo2(text):
+    text = text.lower().replace(" ","").replace(",","").replace(".","").replace("!","").replace("?","").replace("¡","").replace("¿","")
+    return text == text[::-1]
+
+
+a = palindromo2('Ana lleva al oso la avellana.')
+print(a)
